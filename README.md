@@ -4,7 +4,10 @@ This React-based web application offers a proficient and user-centric solution f
 
 ### Live Demo
 
-https://youtu.be/9UNgF2e2Hrw
+https://github.com/PhoebeCheng9911/Quick_Invoice/assets/90079020/1efb1d53-a172-4566-b3d2-a3337db438e7
+
+
+
 
 ### Deployed Website
 The website is live and can be accessed at https://quick-invoice-sigma.vercel.app/
