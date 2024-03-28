@@ -81,7 +81,7 @@ class InvoiceForm extends React.Component {
           discountAmmount: parseFloat(parseFloat(subTotal) * (this.state.discountRate / 100)).toFixed(2)
         }, () => {
           this.setState({
-            total: ((subTotal - this.state.discountAmmount) + parseFloat(this.state.taxAmmount))
+            total: ((subTotal - this.state.discountAmmount) + parseFloat(this.state.taxAmmount)).toFixed(2)
           });
         });
       });
@@ -216,7 +216,7 @@ class InvoiceForm extends React.Component {
                 <option value="¥">JPY (Japanese Yen)</option>
                 <option value="$">CAD (Canadian Dollar)</option>
                 <option value="$">AUD (Australian Dollar)</option>
-                <option value="$">SGD (Signapore Dollar)</option>
+                <option value="$">SGD (Singapore Dollar)</option>
                 <option value="¥">CNY (Chinese Renminbi)</option>
                 <option value="₿">BTC (Bitcoin)</option>
               </Form.Select>
