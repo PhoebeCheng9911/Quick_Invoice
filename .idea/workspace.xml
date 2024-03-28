@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88490790-39bb-4dfe-aaaa-820194a2bc6c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Interface.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InvoiceForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InvoiceForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/InvoiceModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InvoiceModal.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +30,9 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2eHw8zTWVz0zpjLXiVFgKBTKvEi" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -40,7 +41,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "newfeature",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/phoebe/Projects/quick_invoice",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -53,6 +54,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/src/components" />
@@ -70,7 +72,7 @@
       <workItem from="1711609636104" duration="2770000" />
       <workItem from="1711612421323" duration="819000" />
       <workItem from="1711613244531" duration="9366000" />
-      <workItem from="1711622848511" duration="620000" />
+      <workItem from="1711622848511" duration="2742000" />
     </task>
     <servers />
   </component>
