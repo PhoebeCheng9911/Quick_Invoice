@@ -53,6 +53,7 @@ class InvoiceModal extends React.Component {
                   <div className="fw-bold">Billed from:</div>
                   <div>{this.props.info.billFrom||''}</div>
                   <div>{this.props.info.billFromStreet||''}</div>
+                  <div>{this.props.info.billFromCity||''}</div>
                   <div>{this.props.info.billFromState||''}</div>
                   <div>{this.props.info.billFromZipCode||''}</div>
                   <div>{this.props.info.billFromEmail||''}</div>
@@ -61,6 +62,7 @@ class InvoiceModal extends React.Component {
                   <div className="fw-bold">Billed to:</div>
                   <div>{this.props.info.billTo||''}</div>
                   <div>{this.props.info.billToStreet||''}</div>
+                  <div>{this.props.info.billToCity||''}</div>
                   <div>{this.props.info.billToState||''}</div>
                   <div>{this.props.info.billToZipCode||''}</div>
 
@@ -70,6 +72,7 @@ class InvoiceModal extends React.Component {
                   <div className="fw-bold">Shipped to:</div>
                   <div>{this.props.info.shipTo||''}</div>
                   <div>{this.props.info.shipToStreet||''}</div>
+                  <div>{this.props.info.shipToCity||''}</div>
                   <div>{this.props.info.shipToState||''}</div>
                   <div>{this.props.info.shipToZipCode||''}</div>
                   <div>{this.props.info.shipToEmail||''}</div>
