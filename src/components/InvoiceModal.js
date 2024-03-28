@@ -59,6 +59,7 @@ class InvoiceModal extends React.Component {
                   <div>{this.props.info.billFromEmail||''}</div>
                 </Col>
                 <Col md={4}>
+<<<<<<< HEAD
                   <div className="fw-bold">Billed to:</div>
                   <div>{this.props.info.billTo||''}</div>
                   <div>{this.props.info.billToStreet||''}</div>
@@ -76,9 +77,20 @@ class InvoiceModal extends React.Component {
                   <div>{this.props.info.shipToState||''}</div>
                   <div>{this.props.info.shipToZipCode||''}</div>
                   <div>{this.props.info.shipToEmail||''}</div>
+||||||| 110ed5f (add shipping address feature + change color)
+                  <div className="fw-bold">Shipped to:</div>
+                  <div>{this.props.info.shipTo||''}</div>
+                  <div>{this.props.info.shipToAddress||''}</div>
+                  <div>{this.props.info.shipToEmail||''}</div>
+=======
+                  <div className="fw-bold">Billed to:</div>
+                  <div>{this.props.info.billTo||''}</div>
+                  <div>{this.props.info.billToAddress||''}</div>
+                  <div>{this.props.info.billToEmail||''}</div>
+>>>>>>> parent of 110ed5f (add shipping address feature + change color)
                 </Col>
                 <Col md={4}>
-                  <div className="fw-bold mt-2">Date of Issue:</div>
+                  <div className="fw-bold mt-2">Date Of Issue:</div>
                   <div>{this.props.info.dateOfIssue||''}</div>
                 </Col>
               </Row>
