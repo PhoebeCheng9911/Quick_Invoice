@@ -50,15 +50,28 @@ class InvoiceModal extends React.Component {
             <div className="p-4">
               <Row className="mb-4">
                 <Col md={4}>
-                  <div className="fw-bold">Billed From:</div>
+                  <div className="fw-bold">Billed from:</div>
                   <div>{this.props.info.billFrom||''}</div>
-                  <div>{this.props.info.billFromAddress||''}</div>
+                  <div>{this.props.info.billFromStreet||''}</div>
+                  <div>{this.props.info.billFromState||''}</div>
+                  <div>{this.props.info.billFromZipCode||''}</div>
                   <div>{this.props.info.billFromEmail||''}</div>
+                </Col>
+                <Col md={4}>
+                  <div className="fw-bold">Billed to:</div>
+                  <div>{this.props.info.billTo||''}</div>
+                  <div>{this.props.info.billToStreet||''}</div>
+                  <div>{this.props.info.billToState||''}</div>
+                  <div>{this.props.info.billToZipCode||''}</div>
+
+                  <div>{this.props.info.billToEmail||''}</div>
                 </Col>
                 <Col md={4}>
                   <div className="fw-bold">Shipped to:</div>
                   <div>{this.props.info.shipTo||''}</div>
-                  <div>{this.props.info.shipToAddress||''}</div>
+                  <div>{this.props.info.shipToStreet||''}</div>
+                  <div>{this.props.info.shipToState||''}</div>
+                  <div>{this.props.info.shipToZipCode||''}</div>
                   <div>{this.props.info.shipToEmail||''}</div>
                 </Col>
                 <Col md={4}>

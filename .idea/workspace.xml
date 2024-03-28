@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88490790-39bb-4dfe-aaaa-820194a2bc6c" name="Changes" comment="" />
+    <list default="true" id="88490790-39bb-4dfe-aaaa-820194a2bc6c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/components/InvoiceForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InvoiceForm.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +35,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "4e424016",
+    "git-widget-placeholder": "85fa4573",
     "last_opened_file_path": "/Users/phoebe/Projects/quick_invoice",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -54,6 +56,7 @@
       <updated>1711574656465</updated>
       <workItem from="1711574660492" duration="4048000" />
       <workItem from="1711609636104" duration="2770000" />
+      <workItem from="1711612421323" duration="819000" />
     </task>
     <servers />
   </component>

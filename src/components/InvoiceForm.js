@@ -20,10 +20,19 @@ class InvoiceForm extends React.Component {
       dateOfIssue: '',
       shipTo: '',
       shipToEmail: '',
-      shipToAddress: '',
+      shipToStreet: '',
+      shipToState: '',
+      shipToZipCode: '',
       billFrom: '',
       billFromEmail: '',
-      billFromAddress: '',
+      billFromStreet: '',
+      billFromState: '',
+      billFromZipCode: '',
+      billTo: '',
+      billToEmail: '',
+      billToStreet: '',
+      billToState: '',
+      billToZipCode: '',
       notes: '',
       total: '0.00',
       subTotal: '0.00',
@@ -152,15 +161,28 @@ class InvoiceForm extends React.Component {
             <Row className="mb-5">
               <Col>
                 <Form.Label className="fw-bold">Bill from:</Form.Label>
-                <Form.Control placeholder={"Who is this invoice from?"} rows={3} value={this.state.billFrom} type="text" name="billFrom" className="my-2" onChange={(event) => this.editField(event)} autoComplete="name" required="required"/>
+                <Form.Control placeholder={"Company Name?"} rows={3} value={this.state.billFrom} type="text" name="billFrom" className="my-2" onChange={(event) => this.editField(event)} autoComplete="name" required="required"/>
                 <Form.Control placeholder={"Email address"} value={this.state.billFromEmail} type="email" name="billFromEmail" className="my-2" onChange={(event) => this.editField(event)} autoComplete="email" required="required"/>
-                <Form.Control placeholder={"Billing address"} value={this.state.billFromAddress} type="text" name="billFromAddress" className="my-2" autoComplete="address" onChange={(event) => this.editField(event)} required="required"/>
+                <Form.Control placeholder={"Street"} value={this.state.billFromStreet} type="text" name="billFromStreet" className="my-2" autoComplete="address" onChange={(event) => this.editField(event)} required="required"/>
+                <Form.Control placeholder={"State"} value={this.state.billFromState} type="text" name="billFromState" className="my-2" autoComplete="address" onChange={(event) => this.editField(event)} required="required"/>
+                <Form.Control placeholder={"Zip code"} value={this.state.billFromZipCode} type="text" name="billFromZipCode" className="my-2" autoComplete="address" onChange={(event) => this.editField(event)} required="required"/>
+
+              </Col>
+              <Col>
+                <Form.Label className="fw-bold">Bill to:</Form.Label>
+                <Form.Control placeholder={"Recipient Name"} rows={3} value={this.state.billTo} type="text" name="billTo" className="my-2" onChange={(event) => this.editField(event)} autoComplete="name" required="required"/>
+                <Form.Control placeholder={"Email address"} value={this.state.billToEmail} type="email" name="billToEmail" className="my-2" onChange={(event) => this.editField(event)} autoComplete="email" required="required"/>
+                <Form.Control placeholder={"Street"} value={this.state.billToStreet} type="text" name="billToStreet" className="my-2" autoComplete="address" onChange={(event) => this.editField(event)} required="required"/>
+                <Form.Control placeholder={"State"} value={this.state.billToState} type="text" name="billToState" className="my-2" autoComplete="address" onChange={(event) => this.editField(event)} required="required"/>
+                <Form.Control placeholder={"Zip code"} value={this.state.billToZipCode} type="text" name="billToZipCode" className="my-2" autoComplete="address" onChange={(event) => this.editField(event)} required="required"/>
               </Col>
               <Col>
                 <Form.Label className="fw-bold">Ship to:</Form.Label>
-                <Form.Control placeholder={"Who is this invoice shipped to?"} rows={3} value={this.state.shipTo} type="text" name="shipTo" className="my-2" onChange={(event) => this.editField(event)} autoComplete="name" required="required"/>
+                <Form.Control placeholder={"Recipient Name?"} rows={3} value={this.state.shipTo} type="text" name="shipTo" className="my-2" onChange={(event) => this.editField(event)} autoComplete="name" required="required"/>
                 <Form.Control placeholder={"Email address"} value={this.state.shipToEmail} type="email" name="shipToEmail" className="my-2" onChange={(event) => this.editField(event)} autoComplete="email" required="required"/>
-                <Form.Control placeholder={"Billing address"} value={this.state.shipToAddress} type="text" name="shipToAddress" className="my-2" autoComplete="address" onChange={(event) => this.editField(event)} required="required"/>
+                <Form.Control placeholder={"Street"} value={this.state.shipToStreet} type="text" name="shipToStreet" className="my-2" autoComplete="address" onChange={(event) => this.editField(event)} required="required"/>
+                <Form.Control placeholder={"State"} value={this.state.shipToState} type="text" name="shipToState" className="my-2" autoComplete="address" onChange={(event) => this.editField(event)} required="required"/>
+                <Form.Control placeholder={"Zip code"} value={this.state.shipToZipCode} type="text" name="shipToZipCode" className="my-2" autoComplete="address" onChange={(event) => this.editField(event)} required="required"/>
               </Col>
             </Row>
             <InvoiceItem onItemizedItemEdit={this.onItemizedItemEdit.bind(this)} onRowAdd={this.handleAddEvent.bind(this)} onRowDel={this.handleRowDel.bind(this)} currency={this.state.currency} items={this.state.items}/>
@@ -200,7 +222,7 @@ class InvoiceForm extends React.Component {
             </Row>
             <hr className="my-4"/>
             <Form.Label className="fw-bold">Notes:</Form.Label>
-            <Form.Control placeholder="Thank you for doing business with us!" name="notes" value={this.state.notes} onChange={(event) => this.editField(event)} as="textarea" className="my-2" rows={1}/>
+            <Form.Control placeholder="This invoice is generated by swift-invoice!" name="notes" value={this.state.notes} onChange={(event) => this.editField(event)} as="textarea" className="my-2" rows={1}/>
           </Card>
         </Col>
         <Col md={4} lg={3}>
