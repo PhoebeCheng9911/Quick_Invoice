@@ -4,18 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88490790-39bb-4dfe-aaaa-820194a2bc6c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InvoiceForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InvoiceForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InvoiceItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InvoiceItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InvoiceModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InvoiceModal.js" afterDir="false" />
-    </list>
+    <list default="true" id="88490790-39bb-4dfe-aaaa-820194a2bc6c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -33,7 +33,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "4e424016",
     "last_opened_file_path": "/Users/phoebe/Projects/quick_invoice",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -53,6 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1711574656465</updated>
       <workItem from="1711574660492" duration="4048000" />
+      <workItem from="1711609636104" duration="2770000" />
     </task>
     <servers />
   </component>
@@ -76,7 +77,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/InvoiceForm.js</url>
           <line>13</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

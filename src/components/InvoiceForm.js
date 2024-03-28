@@ -18,9 +18,9 @@ class InvoiceForm extends React.Component {
       currentDate: '',
       invoiceNumber: 1,
       dateOfIssue: '',
-      billTo: '',
-      billToEmail: '',
-      billToAddress: '',
+      shipTo: '',
+      shipToEmail: '',
+      shipToAddress: '',
       billFrom: '',
       billFromEmail: '',
       billFromAddress: '',
@@ -157,10 +157,10 @@ class InvoiceForm extends React.Component {
                 <Form.Control placeholder={"Billing address"} value={this.state.billFromAddress} type="text" name="billFromAddress" className="my-2" autoComplete="address" onChange={(event) => this.editField(event)} required="required"/>
               </Col>
               <Col>
-                <Form.Label className="fw-bold">Bill to:</Form.Label>
-                <Form.Control placeholder={"Who is this invoice to?"} rows={3} value={this.state.billTo} type="text" name="billTo" className="my-2" onChange={(event) => this.editField(event)} autoComplete="name" required="required"/>
-                <Form.Control placeholder={"Email address"} value={this.state.billToEmail} type="email" name="billToEmail" className="my-2" onChange={(event) => this.editField(event)} autoComplete="email" required="required"/>
-                <Form.Control placeholder={"Billing address"} value={this.state.billToAddress} type="text" name="billToAddress" className="my-2" autoComplete="address" onChange={(event) => this.editField(event)} required="required"/>
+                <Form.Label className="fw-bold">Ship to:</Form.Label>
+                <Form.Control placeholder={"Who is this invoice shipped to?"} rows={3} value={this.state.shipTo} type="text" name="shipTo" className="my-2" onChange={(event) => this.editField(event)} autoComplete="name" required="required"/>
+                <Form.Control placeholder={"Email address"} value={this.state.shipToEmail} type="email" name="shipToEmail" className="my-2" onChange={(event) => this.editField(event)} autoComplete="email" required="required"/>
+                <Form.Control placeholder={"Billing address"} value={this.state.shipToAddress} type="text" name="shipToAddress" className="my-2" autoComplete="address" onChange={(event) => this.editField(event)} required="required"/>
               </Col>
             </Row>
             <InvoiceItem onItemizedItemEdit={this.onItemizedItemEdit.bind(this)} onRowAdd={this.handleAddEvent.bind(this)} onRowDel={this.handleRowDel.bind(this)} currency={this.state.currency} items={this.state.items}/>
